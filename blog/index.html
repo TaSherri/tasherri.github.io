@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+     <link rel="stylesheet" href="blog.css">
+     <script type="text/javascript" src="blog.js"></script>
+     <script id="blog-template" type="text/x-handlebars-template">
+            <div class="blog">
+                <h3 id="one">{{title}}</h3>
+                <h3 id="two">{{body}}</h3>
+                <hr>
+                
+            </div>
+            </script>
+    </head>
+    <title>My Blog</title>
+    <body>
+       <form>
+            <fieldset>
+                <legend>Blog Your Thoughts</legend>
+                <div>
+                <input type="text" placeholder="Title" name="title"/>
+                </div>
+                
+                <div>
+                    <textarea rows="10" cols="30" placeholder="Your Thoughts" name="body"></textarea>
+                </div>
+            
+                <div>
+                    <input type="submit" value="Submit!">
+                </div>
+            </fieldset>
+        </form>
+        <div id="blog">
+        </div>
+    
+    
+    </body>
+</html>
